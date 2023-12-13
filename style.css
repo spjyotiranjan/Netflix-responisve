@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(20,20,20);
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+nav,main,footer{
+    padding: 0 4vw;
+}
+
+/* Designing NavBar  */
+
+nav{
+    background: linear-gradient(180deg, rgba(20, 20, 20, 0.8) 5%, rgba(20, 20, 20, 0) 100%);;
+    position: fixed;
+    display: flex;
+    height: 5.5vw;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+#nav-left{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-left>img{
+    margin-right: 1vw;
+}
+#nav-right{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-right-img{
+    width: 1.5vw;
+    filter: invert(1);
+}
+#profile{
+    width: 1.5vw;
+}
+#nav-left>img{
+    width: 8vw;
+}
+#nav-left>a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1vw;
+}
+
+/* Designing Main  */
+
+main{
+    background: linear-gradient(0deg, rgba(20,20,20) 0%, rgba(20, 20, 20, 0.00) 8.69%), url("./assets/Title-Image.png"), #202020 50% /cover no-repeat;
+    width: 100%;
+    height: 55.7vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 6vw;
+    color: white;
+}
+#head{
+    /* height: 40vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 21vw;
+
+}
+#N-show{
+    display: flex;
+    width: 7vw;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#N-show>img{
+    width: 1.4vw;
+}
+#N-show>h4{
+    font-size: 1.3vw;
+    letter-spacing: 0.2vw;
+    font-weight: 400;
+}
+#maid{
+    font-size: 10vw;
+    margin-left: -0.5vw;
+}
+#head-buttons{
+    display: flex;
+}
+#head-buttons>button{
+    display: flex;
+    align-items: center;
+    padding: 0.6vw 1vw;
+    border-radius: 3px;
+    border: none;
+}
+button>p{
+    font-weight: 600;
+    font-size: 0.9vw;
+}
+#head-buttons>button>img{
+    margin-right: 0.4vw;
+    width: 1.3vw;
+}
+#play{
+    background-color: white;
+    margin-right: 1vw;
+}
+#more-info{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#more-info>p{
+    color: white;
+}
+#more-info>img{
+    filter: invert(1);
+}
+
+#plus{
+    width: 100%;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#plus>img{
+    width: 1.5vw;
+    filter: invert(1);
+    height: 1.5vw;
+    margin-right: -3vw;
+}
+
+
+/* Designing Collections */
+.text{
+    display: flex;
+    height: 4vw;
+    align-items: center
+
+}
+.text>img{
+    width: 1.1vw;
+    filter: invert(1);
+}
+.text>h4{
+    font-weight: 600;
+    font-size: 1.2vw;
+    margin-right: 0.5vw;
+}
+.tile{
+    margin-bottom: 3vw;
+}
+.shows{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 104%;
+}
+#top-10>.shows{
+    width: 118%;
+    grid-template-columns: repeat(6,1fr);
+}
+.shows>img{
+    width: 17.5vw;
+}
+.img{
+    display: flex;
+    margin-right: 2vw;
+    align-items: center;
+    
+}
+.img>img{
+    height: 12vw;
+}
+.img:nth-child(n+1)>img:first-child{
+    margin-right: -0.5vw;
+}
+
+
+
+/* Footer design starts here  */
+footer{
+    width: 72%;
+    margin: auto;
+}
+#icons,#docs,#last,#rights{
+    margin-bottom: 1vw;
+}
+#icons{
+    display: flex;
+    width: 18%;
+    justify-content: space-between;
+}
+#icons>img{
+    filter: invert(0.7);
+    width: 1.7vw;
+}
+#docs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#docs>div{
+    display: flex;
+    flex-direction: column;
+}
+#docs>div>a{
+    text-decoration: none;
+    color: #aaaaaa;
+    margin-bottom: 0.7vw;
+    font-size: 1vw;
+}
+#rights{
+    padding-bottom: 1vw;
+    font-size: 0.85vw;
+    color: #aaaaaa;
+}
+#last{
+    color: #aaaaaa;
+    background-color: transparent;
+    border: 2px solid #aaaaaa;
+    font-weight: 600;
+    padding: 0.6vw 1vw;
+    font-size: 0.9vw;
+}
+
+
+@media screen and (max-width:1024px){
+    main{
+        height: 56.3vw;
+    }
+    
+} 
+
+@media screen and (max-width:426px){
+    nav{
+        height: 10vw;
+        background: linear-gradient(180deg, rgba(20, 20, 20, 0.8) 60%, rgba(20, 20, 20, 0) 140%);;
+
+    }
+
+    #nav-left>a{
+        display: none;
+    }
+    #nav-left>img{
+        width: 20%;
+        position: absolute;
+        left: 40%;
+        top: 3vw;
+    }
+    .nav-right-img:nth-child(n+2),#profile{
+        display: none;
+    }
+    .nav-right-img:first-child{
+        width: 30%;
+        filter: drop-shadow(0 0 1px black);
+        filter: invert(1);
+        margin-left: 20%;
+    }
+    #head{
+        place-items: center;
+        margin-top: 10vw;
+        filter: drop-shadow(0 0 10px black);
+    }
+    #N-show{
+        background: radial-gradient(circle at center,rgba(0, 0, 0, 0.345) 0%,transparent 45%);
+        width: 11vw;
+    }
+    #N-show>img{
+        width: 3vw;
+    }
+    #N-show>h4{
+        font-size: 2vw;
+    }
+    #maid{
+        font-size: 20vw;
+    }
+    button>p{
+        font-size: 2.5vw;
+    }
+    #head-buttons>button{
+        padding: 1vw 1.5vw;
+    }
+    #head-buttons>button>img{
+        width: 3.4vw;
+        margin-right: 0.8vw;
+    }
+    #play{
+        margin-right: 2vw;
+    }
+    #plus{
+        display: none;
+    }
+
+    .text{
+        height: 10vw;
+        justify-content: center;
+    }
+    .text>img{
+        display: none;
+    }
+    .text>h4{
+        font-size: 3vw;
+    }
+    .tile{
+        margin-bottom: 4vw;
+    }
+    .shows{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .shows>img{
+        width: 30vw;
+    }
+    .shows>img:nth-child(n+4){
+        display: none;
+    }
+    #top-10>.shows{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .img>img{
+        height: 15vw;
+    }
+    .img:nth-child(n+1)>img:first-child{
+        margin-right: -0.5vw;
+    }
+    .img:nth-child(n+5){
+        display: none;
+    }
+
+    footer{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #icons,#docs,#last,#rights{
+        margin-bottom: 5vw;
+    }
+    #icons{
+        width: 30%;
+    }
+    #icons>img{
+        width: 3vw;
+    }
+    #rights{
+        font-size: 1.5vw;
+    }
+    #last{
+        padding: 1.2vw 1.7vw;
+        font-size: 2.2vw;
+    }
+
+
+
+    #docs>div>a{
+        font-size: 1.6vw;
+        margin-bottom: 2vw;
+    }
+    
+}
